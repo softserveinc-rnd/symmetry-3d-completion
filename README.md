@@ -1,5 +1,5 @@
 # Towards realistic symmetry-based completion of previously unseen point clouds
-![](visualization.gif)
+![](images/visualization.gif)
 
 This is the anonymous demo code for the ICCV submission.
 
@@ -20,7 +20,7 @@ This is the anonymous demo code for the ICCV submission.
 
 As the proof of concept we added the visualization of each step so it is recommended to run the following command:
  ```sh
-   python completion.py --filename=models/shapenet/plane16k.pcd --visualization=y --time=y
+   python completion.py --filename=models/shapenet/plane.pcd --visualization=y --time=y
    ```
 
 #### Flags
