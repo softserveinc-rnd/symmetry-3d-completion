@@ -162,6 +162,10 @@ def complete(filename, visualizations=False, time_report=False):
     o3d.visualization.draw_geometries(
         [source.paint_uniform_color([0.5, 0.5, 0.5]), damaged_pc.paint_uniform_color([0, 1, 0])])
 
+    final_pc.estimate_normals()
+
+    o3d.visualization.draw_geometries([final_pc.paint_uniform_color([0.5, 0.5, 0.5])])
+
 if __name__ == '__main__':
     help_string = """
         -h, --help           print help message
